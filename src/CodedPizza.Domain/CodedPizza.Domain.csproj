@@ -35,6 +35,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Topic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

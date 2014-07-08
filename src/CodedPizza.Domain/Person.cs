@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 namespace CodedPizza.Domain
 {
 
-    public class Topic
-    {
+	public class Person
+	{
 
 		public int Id { get; set; }
 
 		public string Name { get; set; }
 
-		public string Description { get; set; }
+		public string EmailAddress { get; set; }
 
-		public ICollection<Person> Presenters { get; set; }
+		public virtual ICollection<Session> Sessions { get; set; }
 
-    }
+	}
 
 }

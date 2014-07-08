@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodedPizza.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,14 @@ namespace CodedPizza.Web.Controllers
 {
 	public class HomeController : Controller
 	{
+
+		public HomeController()
+		{
+			CodedPizzaContext = new CodedPizzaContext();
+		}
+
+		public CodedPizzaContext CodedPizzaContext { get; private set; }
+
 		public ActionResult Index()
 		{
 			return View();
@@ -25,6 +34,16 @@ namespace CodedPizza.Web.Controllers
 			ViewBag.Message = "Your contact page.";
 
 			return View();
+		}
+
+
+		protected override void Dispose(bool disposing)
+		{
+			base.Dispose(disposing);
+			if (disposing)
+			{
+				CodedPizzaContext.Dispose();
+			}
 		}
 	}
 }
