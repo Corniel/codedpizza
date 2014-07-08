@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace CodedPizza.Data
 {
 
-	public class IDataStore<TEntity, TKey>
+	public interface IDataStore<TEntity, TKey>
 	{
 
 		Task<TEntity> Get(TKey key);
