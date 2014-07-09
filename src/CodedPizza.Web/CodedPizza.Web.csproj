@@ -164,6 +164,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TopicController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -231,6 +232,11 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Topic\Create.cshtml" />
+    <Content Include="Views\Topic\Delete.cshtml" />
+    <Content Include="Views\Topic\Details.cshtml" />
+    <Content Include="Views\Topic\Edit.cshtml" />
+    <Content Include="Views\Topic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -242,6 +248,10 @@
     <ProjectReference Include="..\CodedPizza.Data\CodedPizza.Data.csproj">
       <Project>{0ee5fad7-8459-4763-9454-7380a34e5b16}</Project>
       <Name>CodedPizza.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodedPizza.Domain\CodedPizza.Domain.csproj">
+      <Project>{69ee6a88-8fdc-4e40-ad5a-1feaae33ff3c}</Project>
+      <Name>CodedPizza.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

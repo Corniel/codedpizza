@@ -15,6 +15,8 @@ namespace CodedPizza.Data
 			: base("DefaultConnection")
 		{ }
 
+		public System.Data.Entity.DbSet<CodedPizza.Domain.Topic> Topics { get; set; }
+
 	}
 
 }
