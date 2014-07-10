@@ -49,6 +49,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodedPizza.Domain\CodedPizza.Domain.csproj">
+      <Project>{69ee6a88-8fdc-4e40-ad5a-1feaae33ff3c}</Project>
+      <Name>CodedPizza.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
